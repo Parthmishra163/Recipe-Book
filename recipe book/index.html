@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-N8jf+jYoFawhUvd5N67X3uNj8g+C5Eew2m1DEAt6v3uqv6oU7YsbHbGcNtYbqyTfJCYTDuUHsFxImMbrX8C0MQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Recipe Book</title>
+</head>
+<body>
+    <div id="app">
+        <div id="recipe-form">
+            <h2>Add New Recipe</h2>
+            <form id="add-recipe-form">
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" required>
+
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" required></textarea>
+
+                <label for="preparation-steps">Preparation Steps:</label>
+                <textarea id="preparation-steps" required></textarea>
+
+                <label for="recipe-image">Image URL:</label>
+                <input type="url" id="recipe-image">
+
+                <button type="submit">Add Recipe</button>
+            </form>
+        </div>
+        
+        <div id="recipe-list">
+            <h2>Recipe List</h2>
+            <ul id="recipes">
+                <!-- Recipe items will be dynamically added here -->
+            </ul>
+        </div>
+        
+        <div id="recipe-details">
+            <h2>Recipe Details</h2>
+            <div id="selected-recipe">
+                <!-- Details of the selected recipe will be displayed here -->
+            </div>
+        </div>
+        
+        <div id="search-bar">
+            <h2>Search Recipes</h2>
+            <input type="text" id="search-input" placeholder="Enter keywords or ingredients">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
